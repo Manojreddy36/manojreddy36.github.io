@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Manoj Reddy — aspiring AI Visual Designer. Explore visual design, branding concepts and creative work.">
+  <title>Manoj Reddy | AI Visual Designer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{--bg:#0b0c0e;--panel:#141619;--text:#f4f1e9;--muted:#a5a49e;--accent:#e3b83f;--line:#292b2d}
+    *{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;background:var(--bg);color:var(--text);font-family:"DM Sans",sans-serif;line-height:1.6}
+    a{color:inherit;text-decoration:none}.wrap{width:min(1120px,calc(100% - 40px));margin:auto}
+    header{position:sticky;top:0;z-index:5;background:rgba(11,12,14,.88);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+    nav{height:72px;display:flex;align-items:center;justify-content:space-between}.brand{font:700 18px "Space Grotesk";letter-spacing:-.5px}.brand span{color:var(--accent)}
+    .navlinks{display:flex;gap:26px;color:var(--muted);font-size:13px}.navlinks a:hover{color:var(--accent)}
+    .hero{padding:104px 0 86px;display:grid;grid-template-columns:1.2fr .8fr;gap:48px;align-items:center}
+    .eyebrow{color:var(--accent);font-size:12px;letter-spacing:2.5px;text-transform:uppercase;font-weight:700}
+    h1,h2,h3{font-family:"Space Grotesk";line-height:1.08;letter-spacing:-1.7px}h1{font-size:clamp(48px,7vw,82px);margin:18px 0 20px}h1 em{font-style:normal;color:var(--accent)}
+    .intro{max-width:590px;color:var(--muted);font-size:17px}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}
+    .btn{display:inline-flex;padding:13px 19px;border-radius:5px;font-size:13px;font-weight:700;border:1px solid var(--accent);background:var(--accent);color:#141414}.btn.secondary{background:transparent;color:var(--text);border-color:#555}
+    .hero-art{min-height:340px;border:1px solid #343434;border-radius:8px;background:linear-gradient(145deg,#25221a,#111315 58%);position:relative;overflow:hidden;display:grid;place-items:center}
+    .hero-art:before{content:"";position:absolute;width:260px;height:260px;border:1px solid rgba(227,184,63,.45);border-radius:50%;box-shadow:0 0 0 35px rgba(227,184,63,.04),0 0 0 70px rgba(227,184,63,.03)}
+    .hero-art:after{content:"";position:absolute;width:150px;height:190px;background:linear-gradient(135deg,#e3b83f,#7b5a13);clip-path:polygon(50% 0,100% 100%,0 100%);transform:rotate(18deg);opacity:.88}
+    .art-label{position:absolute;bottom:18px;left:20px;color:#d4c9a7;font-size:11px;letter-spacing:2px;text-transform:uppercase;z-index:1}
+    section{padding:78px 0;border-top:1px solid var(--line)}.section-head{display:flex;justify-content:space-between;align-items:end;gap:24px;margin-bottom:34px}
+    h2{font-size:clamp(34px,5vw,50px);margin:10px 0}.sub{color:var(--muted);max-width:510px;font-size:14px}
+    .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:42px}.about-copy{color:var(--muted);max-width:650px}
+    .stats{display:grid;grid-template-columns:1fr 1fr;gap:12px}.stat{padding:22px;background:var(--panel);border:1px solid var(--line);border-radius:6px}.stat strong{display:block;color:var(--accent);font:600 20px "Space Grotesk"}.stat span{font-size:12px;color:var(--muted)}
+    .project{display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:stretch}.project-visual{min-height:300px;border-radius:8px;background:#e5e0d3;color:#151515;padding:28px;display:flex;flex-direction:column;justify-content:space-between;overflow:hidden;position:relative}
+    .project-visual:after{content:"S";position:absolute;font:700 290px "Space Grotesk";right:18px;bottom:-90px;color:rgba(15,15,15,.09)}
+    .project-visual small{letter-spacing:3px;font-weight:700}.project-visual strong{font:700 clamp(46px,6vw,76px) "Space Grotesk";letter-spacing:-5px;z-index:1}.project-visual span{font-size:11px;letter-spacing:2px;z-index:1}
+    .project-info{padding:22px 0}.project-info h3{font-size:32px;margin:10px 0}.project-info p{color:var(--muted)}.tagrow{display:flex;gap:8px;flex-wrap:wrap;margin-top:20px}.tag{border:1px solid #454545;color:#c9c6bd;padding:6px 10px;border-radius:30px;font-size:11px}
+    .skills{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.skill{background:var(--panel);border:1px solid var(--line);padding:22px;border-radius:6px}.skill h3{font-size:19px;letter-spacing:-.5px}.skill p{font-size:13px;color:var(--muted);margin-bottom:0}
+    .contact{background:var(--accent);color:#151515;border-radius:8px;padding:42px;display:flex;justify-content:space-between;align-items:center;gap:24px}.contact h2{max-width:520px}.contact .btn{background:#151515;color:#fff;border-color:#151515}
+    footer{padding:28px 0;color:var(--muted);font-size:12px;display:flex;justify-content:space-between;gap:16px}
+    @media(max-width:760px){.navlinks{gap:12px;font-size:11px}.hero{grid-template-columns:1fr;padding:70px 0}.hero-art{min-height:260px}.about-grid,.project{grid-template-columns:1fr}.skills{grid-template-columns:1fr 1fr}.section-head{display:block}.contact{display:block;padding:28px}.contact .btn{margin-top:12px}}
+    @media(max-width:460px){.navlinks a:nth-child(2),.navlinks a:nth-child(3){display:none}.skills{grid-template-columns:1fr}footer{display:block}}
+  </style>
+</head>
+<body>
+<header><div class="wrap"><nav>
+  <a class="brand" href="#home">MANOJ<span>.</span></a>
+  <div class="navlinks"><a href="#about">About</a><a href="#work">Work</a><a href="#skills">Skills</a><a href="#contact">Contact</a></div>
+</nav></div></header>
+<main>
+  <div class="wrap hero" id="home">
+    <div>
+      <div class="eyebrow">Aspiring AI Visual Designer</div>
+      <h1>Ideas into<br><em>visual impact.</em></h1>
+      <p class="intro">I’m Manoj Reddy, an aspiring AI Visual Designer exploring creative visuals, brand identity and AI-assisted design. I combine a technical mindset with curiosity for clear, engaging design.</p>
+      <div class="actions"><a class="btn" href="#work">Explore my work ↗</a><a class="btn secondary" href="Manoj_Reddy_Professional_AI_Visual_Design_Portfolio.pdf" target="_blank" rel="noopener">View PDF portfolio</a></div>
+    </div>
+    <div class="hero-art"><div class="art-label">Creative thinking · Visual exploration</div></div>
+  </div>
+
+  <section id="about"><div class="wrap">
+    <div class="section-head"><div><div class="eyebrow">A little about me</div><h2>Design with curiosity.</h2></div></div>
+    <div class="about-grid">
+      <p class="about-copy">I’m a B.Tech Mechanical Engineering student at B.V. Raju Institute of Technology. Alongside my engineering background, I’m building skills in visual communication, digital graphics and AI-assisted creative workflows. I enjoy turning ideas into simple, memorable visual concepts and continuously improving through practice.</p>
+      <div class="stats"><div class="stat"><strong>Visual design</strong><span>Layout, colour and composition</span></div><div class="stat"><strong>AI exploration</strong><span>AI-assisted creative workflows</span></div><div class="stat"><strong>Brand concepts</strong><span>Identity and digital graphics</span></div><div class="stat"><strong>Engineering</strong><span>Technical and structured thinking</span></div></div>
+    </div>
+  </div></section>
+
+  <section id="work"><div class="wrap">
+    <div class="section-head"><div><div class="eyebrow">Selected project</div><h2>Work & concepts.</h2></div><p class="sub">A featured concept from my design practice. More original visuals and case studies can be added as the portfolio grows.</p></div>
+    <div class="project">
+      <div class="project-visual"><small>BRAND CONCEPT · 01</small><strong>STARCO</strong><span>MOVE WITH CONFIDENCE</span></div>
+      <div class="project-info"><div class="eyebrow">Brand identity exploration</div><h3>STARCO — Ride-hailing brand concept</h3><p>A visual identity concept exploring a bold, minimal direction for a ride-hailing service. The proposed palette uses black, white and mustard yellow to create a confident, high-contrast brand presence.</p><p><strong>Focus:</strong> Brand direction, colour palette and visual consistency.</p><div class="tagrow"><span class="tag">Branding</span><span class="tag">Colour systems</span><span class="tag">Visual concept</span></div></div>
+    </div>
+  </div></section>
+
+  <section id="skills"><div class="wrap">
+    <div class="eyebrow">What I’m building</div><h2>Skills & tools.</h2>
+    <div class="skills">
+      <div class="skill"><h3>Visual fundamentals</h3><p>Layout, hierarchy, colour combinations, typography and composition.</p></div>
+      <div class="skill"><h3>Canva</h3><p>Beginner-level design practice for digital graphics and layouts.</p></div>
+      <div class="skill"><h3>AI-assisted design</h3><p>Exploring AI tools to support ideation and creative visual development.</p></div>
+      <div class="skill"><h3>3D & modelling</h3><p>SolidWorks, 3D modelling, assembly design and engineering drawings.</p></div>
+      <div class="skill"><h3>Communication</h3><p>Telugu, English and Hindi.</p></div>
+      <div class="skill"><h3>Learning mindset</h3><p>Open to feedback, experimentation and continuous improvement.</p></div>
+    </div>
+  </div></section>
+
+  <section id="contact"><div class="wrap"><div class="contact">
+    <div><div class="eyebrow" style="color:#30240a">Let’s connect</div><h2>Have a project or opportunity in mind?</h2><p>Feel free to reach out. I’d be happy to connect and share my work.</p></div>
+    <div><a class="btn" href="mailto:manojreddy1936@gmail.com">Email me ↗</a><p><a href="https://www.linkedin.com/in/manoj-reddy-b2b259293/" target="_blank" rel="noopener">LinkedIn profile ↗</a></p></div>
+  </div></div></section>
+</main>
+<footer class="wrap"><span>© 2026 Manoj Reddy</span><span>AI Visual Design · Portfolio</span></footer>
+</body></html>
